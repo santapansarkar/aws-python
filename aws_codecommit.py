@@ -3,8 +3,8 @@ import json
 
 client = boto3.client('codecommit')
 
-def read_json():
-    
+
+
 
 
 if __name__ == '__main__':
