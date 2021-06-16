@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/aws-python.iml" filepath="$PROJECT_DIR$/.idea/aws-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../aws-doc-sdk-examples/python/.idea/python.iml" filepath="$PROJECT_DIR$/../aws-doc-sdk-examples/python/.idea/python.iml" />
     </modules>
   </component>
 </project>
