@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../aws-cicd/.idea/aws-cicd.iml" filepath="$PROJECT_DIR$/../../aws-cicd/.idea/aws-cicd.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/aws-python.iml" filepath="$PROJECT_DIR$/.idea/aws-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aws-sam/.idea/aws-sam.iml" filepath="$PROJECT_DIR$/aws-sam/.idea/aws-sam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gitPython/.idea/gitPython.iml" filepath="$PROJECT_DIR$/gitPython/.idea/gitPython.iml" />
       <module fileurl="file://$PROJECT_DIR$/../aws-doc-sdk-examples/python/.idea/python.iml" filepath="$PROJECT_DIR$/../aws-doc-sdk-examples/python/.idea/python.iml" />
     </modules>
   </component>
