@@ -25,6 +25,16 @@ def json_navigate():
         #return contents['name']
         return contents['scripts']['test']
 
+def gmap_navigate():
+    with open('complex_style.json','r') as read_file:
+        gmap_contents = json.load(read_file)
+        return gmap_contents
+
+def navigate_loop():
+    input_text = gmap_navigate()
+    for item in input_text:
+        print(f'The best fruit now is {item}')
+
 
 
 if __name__=="__main__":
@@ -32,5 +42,6 @@ if __name__=="__main__":
     json_output = json.dumps(json_input, indent=2)
     #print(json_output)
     #output = json_navigate()
-    kwargs = json_navigate()
+    #kwargs = json_navigate()
+    kwargs = gmap_navigate()
     print(kwargs)
