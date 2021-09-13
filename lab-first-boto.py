@@ -65,6 +65,11 @@ def cli_args():
 
     print(response)
 
+def external_file(file):
+    with open(file,'r') as f:
+        text = f.read()
+        print(text)
+
 
 
 
@@ -79,5 +84,6 @@ if __name__=="__main__":
     
 
     #aws_docker_registry()
-    cli_args()
+    #cli_args()
+    external_file('wordpress.json')
 
