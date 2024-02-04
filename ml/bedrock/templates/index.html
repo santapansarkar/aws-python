@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-bs-theme="Dark">
+  <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          crossorigin="anonymous"
+        />
+        <title>{% block title %}Your AI Companion Demo{% endblock %}</title>
+      </head>
+
+  <body>
+
+    
+
+    <form method="POST">
+        <h3 align="center">Your AI Companion</h3>
+        <div class="form-group">
+          <label for="ask">Ask me Anything</label>
+          <input
+            type="ask"
+            class="form-control"
+            id="ask"
+            name="ask"
+          />
+          <br>
+          <p align="center">
+          <button type="submit" class="btn btn-primary">AskMe</button>
+          <button type="reset" class="btn btn-primary">Reset</button>
+        </p>
+        </div>
+        <div class="form-floating">
+            <label>Here is what I opine</label>
+            <textarea class="form-control" placeholder="Here is what I found for You!" id="floatingTextarea2" style="height: 450px">
+            {{ response }}
+        </textarea>  
+          </div>
+        </form>      
+        <br />
+
+      
+  </body>
+</html>
