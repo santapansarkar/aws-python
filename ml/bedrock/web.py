@@ -11,6 +11,14 @@ def index():
 
     return render_template('index.html', text="**********AI Companion*********")
 
+
+@app.route("/set")
+@app.route("/set/<theme>")
+def set_theme(theme="dark"):
+  res = make_response(redirect(url_for("index")))
+  res.set_cookie("theme", theme)
+  return res    
+
 def invoke_llm(prompt):
     boto3.setup_default_session(profile_name='sxsarkar')
     bedrock_runtime = boto3.client('bedrock-runtime')

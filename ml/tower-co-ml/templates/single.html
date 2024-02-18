@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>TowerCo AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** CSS Plugins Needed for the Project ** -->
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../static/bootstrap.min.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="../static/themify-icons.css">
+  <!--Favicon-->
+  <link rel="icon" href="../static/favicon.png" type="image/x-icon">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <!-- Main Stylesheet -->
+  <link href="../static/style.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="shadow-bottom sticky-top bg-white">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a class="navbar-brand px-2" href="index.html">TowerCo AI</a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- /header -->
+
+  <!-- details page -->
+  <section class="single section-sm pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="sidebar">
+
+              <li class="sidelist">
+                <ul>
+                  <li class="sidelist active">
+                    <a href="single.html">Requirments</a>
+                  </li>
+                  <li class="sidelist">
+                    <a href="single.html">Install</a>
+                  </li>
+                  <li class="sidelist">
+                    <a href="single.html">Configuration</a>
+                  </li>
+                  <li class="sidelist">
+                    <a href="single.html">Customization</a>
+                  </li>
+                  <li class="sidelist">
+                    <a href="single.html">Elements</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="p-lg-5 p-4 bg-white">
+            <h2 class="mb-5">Elements</h2>
+            <div class="content">
+            
+              <hr>
+              <h5 id="paragraph">Paragraph</h5>
+              <p>{{data}}</p>
+              <hr>
+            <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on {{current_timestamp}}</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /details page -->
+
+</body>
+
+</html>
